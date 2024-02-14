@@ -161,7 +161,7 @@ def update_graph(selectedCountry, catchupCountry, growthRate):
                  )
 
     #Projected line
-    projection_years = selectedCountryGDP['year'].append(pd.Series(range(selectedCountryGDP['year'].max() + 1, selectedCountryGDP['year'].max() + int(np.ceil(yearsCatchup)) + 1)))
+    projection_years = pd.concat([selectedCountryGDP['year'], pd.Series(range(selectedCountryGDP['year'].max() + 1, selectedCountryGDP['year'].max() + int(np.ceil(yearsCatchup)) + 1))])
     projected_GDP = selectedCountryGDP['rgdpe_pc'].tolist() + [GDPlast * (1 + growthRate) ** i for i in range(1, int(np.ceil(yearsCatchup)) + 1)]
     fig.add_trace(go.Scatter(x=projection_years, y=projected_GDP,
                              mode='lines',
