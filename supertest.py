@@ -59,7 +59,7 @@ def updateProjection(lastGDP, lastGDPCatchup, yearsCatchup):
         return f"⏰ In {round(yearsCatchup)} years."
 
 #Layout
-app.layout = html.Div(style={'backgroundColor': '#f2f2f2', 'padding': '20px', 'font-family': 'Arial Narrow'}, children=[
+app.layout = html.Div(style={'backgroundColor': '#f2f2f2', 'padding': '20px', 'font-family': 'Helvetica'}, children=[
     html.H1("MOUNTAIN TO CLIMB 2: ELECTRIC BOOGALOO", style={'color': '#333333', 'text-transform': 'uppercase', 'margin-bottom': '20px'}),
     
     html.Div([
@@ -186,7 +186,7 @@ def update_graph(selectedCountry, catchupCountry, growthRate):
         hovermode='closest',
         plot_bgcolor='#f2f2f2',  
         paper_bgcolor='#f2f2f2',  
-        font=dict(family="Arial Narrow", size=12, color="#333333"), 
+        font=dict(family="Helvetica", size=12, color="#333333"), 
         template='plotly_white'  
     )
 
