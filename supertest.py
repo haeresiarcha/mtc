@@ -6,6 +6,7 @@ import numpy as np
 import plotly.graph_objs as go
 import pycountry
 import plotly.express as px
+import gunicorn
 
 app = dash.Dash(__name__)
 
