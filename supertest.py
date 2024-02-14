@@ -60,7 +60,7 @@ def updateProjection(lastGDP, lastGDPCatchup, yearsCatchup):
 
 #Layout
 app.layout = html.Div(style={'backgroundColor': '#f2f2f2', 'padding': '20px', 'font-family': 'Helvetica'}, children=[
-    html.H1("MOUNTAIN TO CLIMB 2: ELECTRIC BOOGALOO", style={'color': '#333333', 'text-transform': 'uppercase', 'margin-bottom': '20px'}),
+    html.H1("MOUNTAIN TO CLIMB 2", style={'color': '#333333', 'text-transform': 'uppercase', 'margin-bottom': '20px'}),
     
     html.Div([
         dcc.Dropdown(
