@@ -9,7 +9,7 @@ import plotly.express as px
 import gunicorn
 
 app = dash.Dash(__name__)
-
+server = app.server
 
 data = pd.read_csv("https://oliverwkim.com/assets/mountain_to_climb/pwt_10.csv")
 
